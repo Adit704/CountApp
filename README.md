@@ -21,7 +21,9 @@ The app follows the **MVI architecture**:
 
 ```bash
 npm create vite@latest counter-app --template react
-cd my-react-counter-app
+cd counter-app
+npm i
+npm run dev
 
 src/
 |-- intent/
