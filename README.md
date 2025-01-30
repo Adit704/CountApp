@@ -24,13 +24,13 @@ npm create vite@latest counter-app --template react
 cd my-react-counter-app
 
 src/
+|-- intent/
+|   |-- CounterIntent.js     # Intent that handles user actions like increment, decrement, and reset
+|-- model/
+|   |-- CounterModel.js       # Model that manages the state and auto-increment logic using RxJS
 |-- view/
 |   |-- CounterView.jsx        # View component that displays the counter and handles UI updates
 |   |-- CounterView.css
-|-- model/
-|   |-- CounterModel.js       # Model that manages the state and auto-increment logic using RxJS
-|-- intent/
-|   |-- CounterIntent.js     # Intent that handles user actions like increment, decrement, and reset
 |-- App.jsx                    # Main component that ties everything together
 |-- main.jsx                  # Entry point for the application
 
