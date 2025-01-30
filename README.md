@@ -20,16 +20,17 @@ The app follows the **MVI architecture**:
 ### 1️⃣ Create a new React project with Vite
 
 ```bash
-npm create vite@latest my-react-counter-app --template react
+npm create vite@latest counter-app --template react
 cd my-react-counter-app
 
 src/
-|-- components/
-|   |-- CounterView.js        # View component that displays the counter and handles UI updates
+|-- view/
+|   |-- CounterView.jsx        # View component that displays the counter and handles UI updates
+|   |-- CounterView.css
 |-- model/
-|   |-- counterModel.js       # Model that manages the state and auto-increment logic using RxJS
+|   |-- CounterModel.js       # Model that manages the state and auto-increment logic using RxJS
 |-- intent/
-|   |-- counterIntent.js      # Intent that handles user actions like increment, decrement, and reset
-|-- App.js                    # Main component that ties everything together
+|   |-- CounterIntent.js     # Intent that handles user actions like increment, decrement, and reset
+|-- App.jsx                    # Main component that ties everything together
 |-- main.jsx                  # Entry point for the application
-|-- counterView.css           # Styles for the counter view
+
